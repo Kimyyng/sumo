@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumo</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+      :root {
+        --primary-color: #750947;
+        --secondary-color: #f45353;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .container {
+        min-height: 100vh;
+        background-color: var(--primary-color);
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 0 1rem;
+        font-weight: 700;
+        color: var(--primary-color);
+      }
+
+      #jurusan {
+        padding-left: 10px;
+        border-left: 1px solid var(--primary-color);
+      }
+
+      small {
+        font-size: 8px;
+      }
+
+      #list-tanggal {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      #list-tanggal a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .libur {
+        color: var(--secondary-color);
+      }
+
+      #list-tanggal li {
+        padding: 12px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      #list-tanggal li p {
+        margin: 0;
+      }
+
+      #list-tanggal .active {
+        border-radius: 100%;
+        border: 1px solid white;
+      }
+
+      main {
+        background: white;
+        height: 100vh;
+        margin: 0 1rem;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 0;
+      }
+
+      .dev {
+        background: black;
+      }
+
+      .matkul {
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        border: 1px solid rgb(0 0 0 / 0.1);
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+          0 8px 10px -6px rgb(0 0 0 / 0.1);
+      }
+
+      .matkul-content {
+        width: 100%;
+      }
+
+      .matkul-content > h1 {
+        margin-bottom: 0.5rem;
+        color: var(--primary-color);
+      }
+
+      .matkul-content > p {
+        margin-top: 0.5rem;
+        font-weight: 700;
+      }
+
+      .matkul-waktu {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+      }
+
+      .matkul-waktu > small {
+        font-size: 0.75rem;
+      }
+
+      .ruangan {
+        background: var(--primary-color);
+        color: white;
+        border-radius: 9999px;
+        writing-mode: vertical-rl;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .matkul-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .btn-start {
+        border: 1px solid var(--primary-color);
+        border-radius: 9999px;
+        padding: 0.5rem 2rem;
+        background: white;
+        font-weight: 700;
+        color: var(--primary-color);
+        height: 3rem;
+      }
+
+      .btn-start:hover {
+        background: var(--primary-color);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <p id="nama">Riska Sari</p>
+        <p id="jurusan">SI 22F</p>
+      </nav>
+
+      <ul id="list-tanggal">
+        <li class="active">
+          <a href="#">All</a>
+        </li>
+        <li>
+          <a href="#">
+            <small>SUN</small>
+            <p>12</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <small>MON</small>
+            <p>13</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <small>SUN</small>
+            <p class="libur">14</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <small>SUN</small>
+            <p>15</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <small>SUN</small>
+            <p>16</p>
+          </a>
+        </li>
+      </ul>
+
+      <main>
+        <section class="matkul">
+          <p class="ruangan">online</p>
+
+          <div class="matkul-content">
+            <h1>Agama dan Etika</h1>
+            <p>Muhamad abi saleh</p>
+
+            <div class="matkul-action">
+              <p class="matkul-waktu">01:30 <small>PM</small></p>
+              <button class="btn-start">Start</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="matkul">
+          <p class="ruangan">online</p>
+
+          <div class="matkul-content">
+            <h1>Agama dan Etika</h1>
+            <p>Muhamad abi saleh</p>
+
+            <div class="matkul-action">
+              <p class="matkul-waktu">01:30 <small>PM</small></p>
+              <button class="btn-start">Start</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -3,80 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sumo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
   </head>
   <body>
-    <div class="max-w-sm relative h-screen">
-      <div
-        class="bg-[#7C0046] inline-block rounded-l-full absolute right-0 py-5 px-7 top-5"
-      >
-        <h1 class="text-white text-2xl font-bold">EN</h1>
-      </div>
-      <div class="text-center my-8 mt-36">
-        <img
-          src="img/logo.jpg"
-          alt=""
-          class="rounded-full mx-auto"
-          height="120"
-          width="120"
-        />
-        <h1 class="text-4xl">SUMO</h1>
-        <p class="mt-2">
-          Online Student Exam System <br />Universitas Nusa Putra
-        </p>
-      </div>
-      <div
-        class="bg-[#7C0046] rounded-t-3xl p-8 absolute w-full bottom-0 h-[500px]"
-      >
-        <h1 class="text-white font-bold text-4xl mb-12">welcome</h1>
-        <div class="px-11">
-          <div class="border-b-2 flex py-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-8 fill-white mr-4"
-              viewBox="0 0 512 512"
-            >
-              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"
-              />
-            </svg>
-            <input
-              type="text"
-              placeholder="User Name"
-              class="bg-transparent w-full text-white"
-            />
-          </div>
-          <div class="border-b-2 flex py-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-6 fill-white mr-4"
-              viewBox="0 0 448 512"
-            >
-              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M224 64c-44.2 0-80 35.8-80 80v48H384c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80V144C80 64.5 144.5 0 224 0c57.5 0 107 33.7 130.1 82.3c7.6 16 .8 35.1-15.2 42.6s-35.1 .8-42.6-15.2C283.4 82.6 255.9 64 224 64zm32 320c17.7 0 32-14.3 32-32s-14.3-32-32-32H192c-17.7 0-32 14.3-32 32s14.3 32 32 32h64z"
-              />
-            </svg>
-            <input
-              type="text"
-              placeholder="User Name"
-              class="bg-transparent w-full text-white"
-            />
-          </div>
+    <div class="flex justify-center">
+      <div class="relative h-screen max-w-md bg-primary">
+        <div
+          class="bg-primary inline-block rounded-l-full absolute right-0 top-5 py-5 px-7"
+        >
+          <h1 class="text-white text-2xl font-bold">EN</h1>
         </div>
-        <div class="mt-24 flex justify-between">
-          <button
-            class="text-white text-2xl font-bold py-4 border-2 rounded-full px-12"
-          >
-            Help
-          </button>
-          <button
-            class="text-white text-2xl font-bold py-4 border-2 rounded-full px-12"
-          >
-            Login
-          </button>
+        <div class="bg-white w-full pt-12">
+          <div class="text-center py-6">
+            <img
+              src="img/logo.jpg"
+              alt=""
+              class="rounded-full mx-auto"
+              height="120"
+              width="120"
+            />
+            <h1 class="text-4xl">SUMO</h1>
+            <p class="mt-2">
+              Online Student Exam System <br />Universitas Nusa Putra
+            </p>
+          </div>
+          <div class="bg-primary rounded-t-3xl p-8 w-full">
+            <h1 class="text-white font-bold text-4xl mb-12">welcome</h1>
+            <div class="px-11">
+              <div class="border-b-2 flex py-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-8 fill-white mr-4"
+                  viewBox="0 0 512 512"
+                >
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"
+                  />
+                </svg>
+                <input
+                  type="text"
+                  placeholder="User Name"
+                  class="bg-transparent w-full text-white"
+                />
+              </div>
+              <div class="border-b-2 flex py-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-8 border-2 border-white p-1 rounded-full fill-white mr-4"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M224 64c-44.2 0-80 35.8-80 80v48H384c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80V144C80 64.5 144.5 0 224 0c57.5 0 107 33.7 130.1 82.3c7.6 16 .8 35.1-15.2 42.6s-35.1 .8-42.6-15.2C283.4 82.6 255.9 64 224 64zm32 320c17.7 0 32-14.3 32-32s-14.3-32-32-32H192c-17.7 0-32 14.3-32 32s14.3 32 32 32h64z"
+                  />
+                </svg>
+                <input
+                  type="text"
+                  placeholder="User Name"
+                  class="bg-transparent w-full text-white"
+                />
+              </div>
+            </div>
+            <div class="mt-24 flex justify-between gap-2">
+              <button
+                class="text-white text-2xl font-bold py-4 border-2 rounded-full px-12 hover:bg-white hover:text-primary"
+              >
+                Help
+              </button>
+              <button
+                class="text-white text-2xl font-bold py-4 border-2 rounded-full px-12 hover:bg-white hover:text-primary"
+              >
+                Login
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

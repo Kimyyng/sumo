@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumo - soal menu</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+      :root {
+        --primary-color: #750947;
+        --secondary-color: #f45353;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .container {
+        min-height: 100vh;
+        background-color: var(--primary-color);
+      }
+
+      nav {
+        display: flex;
+        margin: 0 1rem;
+        justify-content: space-between;
+        color: white;
+        font-weight: 700;
+      }
+
+      .matkul {
+        text-align: center;
+        width: 100%;
+      }
+
+      .icon {
+        width: 10px;
+        fill: white;
+      }
+
+      .alert {
+        background: #430126;
+        padding: 0.15rem 1rem;
+        color: white;
+        display: flex;
+        gap: 10px;
+      }
+
+      .sisa-waktu {
+        font-weight: 700;
+      }
+
+      main {
+        padding: 0 1rem;
+        color: white;
+        font-weight: 700;
+      }
+
+      .jenis-soal {
+        margin-left: 2.5rem;
+        margin-top: 2.5rem;
+      }
+
+      .list-soal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style-type: none;
+      }
+
+      .list-soal > li {
+        background: #838383;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+        width: 3.5rem;
+        border-radius: 0.5rem;
+      }
+
+      .done {
+        background: white !important;
+      }
+
+      .list-soal > li > a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <p class="matkul">Agama dan Etika</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="icon"
+        >
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </nav>
+
+      <div class="alert">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+          class="icon"
+        >
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM96 75V64H288V75c0 25.5-10.1 49.9-28.1 67.9L192 210.7l-67.9-67.9C106.1 124.9 96 100.4 96 75z"
+          />
+        </svg>
+        <p>Sisa waktu pengerjaan <span class="sisa-waktu">23:50:41</span></p>
+      </div>
+
+      <main>
+        <section>
+          <p class="jenis-soal">PG 20</p>
+          <ul class="list-soal">
+            <li class="done"><a href="">1</a></li>
+            <li class="done"><a href="">2</a></li>
+            <li class="done"><a href="">3</a></li>
+            <li class="done"><a href="">4</a></li>
+            <li class="done"><a href="">5</a></li>
+            <li class="done"><a href="">6</a></li>
+            <li class="done"><a href="">7</a></li>
+            <li class="done"><a href="">8</a></li>
+            <li class="done"><a href="">9</a></li>
+            <li><a href="">10</a></li>
+            <li><a href="">11</a></li>
+            <li><a href="">12</a></li>
+            <li><a href="">13</a></li>
+            <li><a href="">14</a></li>
+            <li><a href="">15</a></li>
+            <li><a href="">16</a></li>
+            <li><a href="">17</a></li>
+            <li><a href="">18</a></li>
+            <li><a href="">19</a></li>
+            <li><a href="">20</a></li>
+          </ul>
+        </section>
+        <section>
+          <p class="jenis-soal">Essay 5</p>
+          <ul class="list-soal">
+            <li class="done"><a href="">1</a></li>
+            <li class="done"><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
