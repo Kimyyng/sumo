@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumo - soal menu</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+      :root {
+        --primary-color: #750947;
+      }
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+      .container {
+        min-height: 100vh;
+        background-color: var(--primary-color);
+      }
+      nav {
+        display: flex;
+        margin: 0 1rem;
+        justify-content: space-between;
+        color: white;
+        font-weight: 700;
+      }
+      .matkul {
+        text-align: center;
+        width: 100%;
+      }
+      .icon {
+        width: 10px;
+        fill: white;
+      }
+      .alert {
+        background: #430126;
+        padding: 0.15rem 1rem;
+        color: white;
+        display: flex;
+        gap: 10px;
+      }
+      .sisa-waktu {
+        font-weight: 700;
+      }
+      main {
+        padding: 0 1rem;
+        color: white;
+        font-weight: 700;
+      }
+      .jenis-soal {
+        margin-left: 0.1rem;
+        margin-top: 2.5rem;
+      }
+      .list-soal {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 0.5rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .list-soal::-webkit-scrollbar {
+        display: none;
+      }
+      .list-soal > li {
+        background: #838383;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+        width: 3.5rem;
+        border-radius: 0.5rem;
+        flex-shrink: 0;
+      }
+      .done {
+        background: white !important;
+      }
+      .done1 {
+        background: rgb(197, 197, 197) !important;
+      }
+
+      .list-soal > li > a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      .lembar {
+        background: white;
+        height: 100vh;
+        margin: 0 1rem;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 0;
+      }
+
+      .matkul-content {
+        margin-top: 0.5rem;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .options {
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 200px;
+      }
+
+      .option {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        padding: 100px;
+        border: 1px solid var(--primary-color);
+        border-radius: 0.5rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        transition: background-color 0.3s ease;
+      }
+      .answare {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        padding: 100px;
+        border: 1px solid var(--primary-color);
+        border-radius: 0.5rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        transition: background-color 0.3s ease;
+      }
+
+      .option input[type="radio"] {
+        display: none;
+      }
+
+      .option span {
+        margin-left: 1rem;
+      }
+
+      .option.selected {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .btn-start {
+        border: 1px solid var(--primary-color);
+        border-radius: 9999px;
+        padding: 0.5rem 2rem;
+        background: white;
+        font-weight: 700;
+        color: var(--primary-color);
+        height: 3rem;
+      }
+      .btn-start:hover {
+        background: var(--primary-color);
+        color: white;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0px 11px;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 2rem);
+      }
+      .input-field {
+        flex: 1; /* Input mengambil sisa ruang di dalam kotak */
+        margin-left: 10px; /* Jarak antara input dan teks */
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <p class="matkul">Agama dan Etika</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="icon"
+          onclick="window.location.href='../soal-menu.html'"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </nav>
+
+      <div class="alert">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+          class="icon"
+        >
+          <path
+            d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM96 75V64H288V75c0 25.5-10.1 49.9-28.1 67.9L192 210.7l-67.9-67.9C106.1 124.9 96 100.4 96 75z"
+          />
+        </svg>
+        <p>Sisa waktu pengerjaan <span class="sisa-waktu">23:50:41</span></p>
+      </div>
+
+      <main>
+        <section>
+          <ul class="list-soal">
+            <li class="done1"><a href="soal.html">1</a></li>
+            <li class="done"><a href="soal2.html">2</a></li>
+          </ul>
+          <p class="jenis-soal">Essay 1</p>
+        </section>
+      </main>
+
+      <div class="lembar">
+        <div class="matkul-content">
+          <p>
+            Dalam diskusi tentang etika dan moralitas, sering kali muncul
+            pertanyaan tentang bagaimana kita harus bertindak dalam situasi yang
+            sulit. Salah satu pendekatan yang banyak dibahas adalah
+            ‘Deontologi’, yang merupakan teori etika yang dikembangkan oleh
+            filsuf Immanuel Kant. Menurut deontologi, bagaimana kita menentukan
+            tindakan yang benar?
+          </p>
+        </div>
+        <div class="options">
+          <div class="answare"></div>
+
+          <div class="footer">
+            <button
+              class="btn-start"
+              onclick="window.location.href='soal-menu.html'"
+            >
+              Back
+            </button>
+            <button
+              class="btn-start"
+              onclick="window.location.href='essay2.html'"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

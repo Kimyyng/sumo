@@ -62,6 +62,22 @@
         margin-left: 2.5rem;
         margin-top: 2.5rem;
       }
+      .btn-lock {
+        border: 1px solid var(--primary-color);
+        border-radius: 9999px;
+        padding: 0.5rem 2rem;
+        background: white;
+        font-weight: 700;
+        color: var(--primary-color);
+        height: 3rem;
+        margin-left: 300px;
+
+      }
+      .btn-lock:hover {
+        background: #430126;
+        color: white;
+  
+      }
 
       .list-soal {
         display: flex;
@@ -98,6 +114,7 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
           class="icon"
+          onclick="window.location.href='../exam/soal.html'"
         >
           <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path
@@ -124,7 +141,7 @@
         <section>
           <p class="jenis-soal">PG 20</p>
           <ul class="list-soal">
-            <li class="done"><a href="">1</a></li>
+            <li class="done"><a href="../exam/soal1.html">1</a></li>
             <li class="done"><a href="">2</a></li>
             <li class="done"><a href="">3</a></li>
             <li class="done"><a href="">4</a></li>
@@ -149,13 +166,14 @@
         <section>
           <p class="jenis-soal">Essay 5</p>
           <ul class="list-soal">
-            <li class="done"><a href="">1</a></li>
-            <li class="done"><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li><a href="">5</a></li>
+            <li class="done"><a href="essay.html">1</a></li>
+            <li class="done"><a href="essay2.html">2</a></li>
           </ul>
         </section>
+        <div>
+        <button class="btn-lock" onclick="window.location.href='index.html'">
+          Lock Answare
+        </button>
       </main>
     </div>
   </body>

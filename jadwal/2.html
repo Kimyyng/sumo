@@ -77,11 +77,10 @@
 
       main {
         background: white;
-        height: calc(100vh - 70px);
+        height: 100vh;
         margin: 0 1rem;
         border-radius: 1rem 1rem 0 0;
         padding: 1rem 0;
-        overflow-y: auto;
       }
 
       .dev {
@@ -146,10 +145,6 @@
         color: var(--primary-color);
         height: 3rem;
       }
-      .btn-start:hover {
-        background: var(--primary-color);
-        color: white;
-      }
       .btn-missed {
         border: 1px solid var(--primary-color);
         border-radius: 9999px;
@@ -164,6 +159,10 @@
         color: #836f7a;
       }
 
+      .btn-start:hover {
+        background: var(--primary-color);
+        color: white;
+      }
       .btn-done {
         border: 1px solid var(--primary-color);
         border-radius: 9999px;
@@ -178,41 +177,41 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar" onclick="window.location.href='profile.html'">
+      <nav class="navbar" onclick="window.location.href='../profile.html'">
         <p id="nama">Riska Sari</p>
         <p id="jurusan">SI 22F</p>
       </nav>
 
       <ul id="list-tanggal">
         <li class="active">
-          <a href="#">All</a>
+          <a href="../index.html">All</a>
         </li>
         <li>
-          <a href="../jadwal/2.html">
+          <a href="2.html">
             <small>SUN</small>
             <p>12</p>
           </a>
         </li>
         <li>
-          <a href="../jadwal/3.html">
+          <a href="3.html">
             <small>MON</small>
             <p>13</p>
           </a>
         </li>
         <li>
-          <a href="../jadwal/4.html">
+          <a href="4.html">
             <small>SUN</small>
             <p class="libur">14</p>
           </a>
         </li>
         <li>
-          <a href="../jadwal/5.html">
+          <a href="5.html">
             <small>SUN</small>
             <p>15</p>
           </a>
         </li>
         <li>
-          <a href="../jadwal/6.html">
+          <a href="6.html">
             <small>SUN</small>
             <p>16</p>
           </a>
@@ -231,90 +230,10 @@
               <p class="matkul-waktu">01:30 <small>PM</small></p>
               <button
                 class="btn-start"
-                onclick="window.location.href='soal-menu.html'"
+                onclick="window.location.href='../soal-menu.html'"
               >
                 Start
               </button>
-            </div>
-          </div>
-        </section>
-
-        <section class="matkul">
-          <p class="ruangan">online</p>
-
-          <div class="matkul-content">
-            <h1>Sistem Operasi</h1>
-            <p>Nur Binti, M.Kom</p>
-
-            <div class="matkul-action">
-              <p class="matkul-waktu">08:00 <small>PM</small></p>
-              <button class="btn-missed">Missed</button>
-            </div>
-          </div>
-        </section>
-        <section class="matkul">
-          <p class="ruangan">B4 A</p>
-
-          <div class="matkul-content">
-            <h1>Software Testing</h1>
-            <p>M ANTON PERMANA, S.Kom., M.Kom.</p>
-
-            <div class="matkul-action">
-              <p class="matkul-waktu">10:30 <small>PM</small></p>
-              <button class="btn-missed">Missed</button>
-            </div>
-          </div>
-        </section>
-        <section class="matkul">
-          <p class="ruangan">online</p>
-
-          <div class="matkul-content">
-            <h1>Aljabar Linear</h1>
-            <p>Megalodon, ST. M.Kom</p>
-
-            <div class="matkul-action">
-              <p class="matkul-waktu">01:30 <small>PM</small></p>
-              <button class="btn-done">Done</button>
-            </div>
-          </div>
-        </section>
-
-        <section class="matkul">
-          <p class="ruangan">B4 G</p>
-
-          <div class="matkul-content">
-            <h1>UI/UX Design</h1>
-            <p>Riska Putri Nilasari,S.pd.Kom., M.Kom</p>
-
-            <div class="matkul-action">
-              <p class="matkul-waktu">06:50 <small>PM</small></p>
-              <button class="btn-done">Done</button>
-            </div>
-          </div>
-        </section>
-        <section class="matkul">
-          <p class="ruangan">B4 A</p>
-
-          <div class="matkul-content">
-            <h1>Keamanan Jaringan</h1>
-            <p>Arni Lattu,S.pd.Kom., M.Kom</p>
-
-            <div class="matkul-action">
-              <p class="matkul-waktu">10:30 <small>PM</small></p>
-              <button class="btn-done">Done</button>
-            </div>
-          </div>
-        </section>
-        <section class="matkul">
-          <p class="ruangan">Online</p>
-
-          <div class="matkul-content">
-            <h1>Kecerdasan Buatan</h1>
-            <p>GPT,S.pd.Kom., M.Kom</p>
-
-            <div class="matkul-action">
-              <p class="matkul-waktu">23:00 <small>AM</small></p>
-              <button class="btn-done">Done</button>
             </div>
           </div>
         </section>
